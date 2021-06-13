@@ -10,3 +10,25 @@ body {
   background: #080a0d;
   font-family: "Archivo", sans-serif;
 }
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+  40% {
+    background-size: 720%;
+  }
+  0% {
+    background-size: 100%;
+  }
+}
