@@ -1,19 +1,22 @@
 import styled from "styled-components";
 import "./../index.css";
-const LoadingScreen = () => {
+const LandingPage = () => {
   return (
-    <LoadingScreenWrapper>
-      <h1 className="gradient-text">Keep</h1>
-    </LoadingScreenWrapper>
+    <LandingPageWrapper>
+      <h1 className="gradient-text">keep</h1>
+      <h2>Crypto Wallet</h2>
+    </LandingPageWrapper>
   );
 };
 
-const LoadingScreenWrapper = styled.div`
+const LandingPageWrapper = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
   h1 {
     background-color: #f3ec78;
     background-image: conic-gradient(#f3ec78, #af4261);
@@ -37,9 +40,19 @@ const LoadingScreenWrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: 600;
-    font-size: 6em;
-    animation: rainbow-text-simple-animation-rev 3s ease infinite;
+    font-size: 6rem;
+    letter-spacing: 1px;
+    animation: rainbow-text-simple-animation-rev 4s ease infinite;
+  }
+  h2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 38vh;
   }
 `;
 
-export default LoadingScreen;
+export default LandingPage;
