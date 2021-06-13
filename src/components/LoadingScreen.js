@@ -5,7 +5,7 @@ const LoadingScreen = () => {
 };
 
 const LoadingScreenWrapper = styled.div`
-  //
+  
 `;
 
 export default LoadingScreen;
