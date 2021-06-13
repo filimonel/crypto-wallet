@@ -9,6 +9,7 @@
 body {
   background: #080a0d;
   font-family: "Archivo", sans-serif;
+  letter-spacing: 1px;
 }
 
 .gradient-text:hover {

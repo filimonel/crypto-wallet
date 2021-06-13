@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import IconButton from "@material-ui/core/IconButton";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
 import "./../index.css";
 const LandingPage = () => {
   return (
     <LandingPageWrapper>
-      <h1 className="gradient-text">keep</h1>
-      <h2>Crypto Wallet</h2>
+      <TextContainer>
+        <h1 className="gradient-text">keep</h1>
+        <h2>Crypto Wallet</h2>
+        <button>Sign in</button>
+      </TextContainer>
     </LandingPageWrapper>
   );
 };
@@ -12,6 +17,14 @@ const LandingPage = () => {
 const LandingPageWrapper = styled.div`
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const TextContainer = styled.div`
+  height: 500px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,18 +53,38 @@ const LandingPageWrapper = styled.div`
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     font-weight: 600;
-    font-size: 6rem;
-    letter-spacing: 1px;
+    font-size: 7rem;
     animation: rainbow-text-simple-animation-rev 4s ease infinite;
   }
   h2 {
     color: white;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
+    margin-top: 20px;
+  }
+  button {
+    width: 160px;
+    height: 35px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 300;
+    background: #2128339e;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    -webkit-letter-spacing: 1px;
+    -moz-letter-spacing: 1px;
+    -ms-letter-spacing: 1px;
     letter-spacing: 1px;
+    cursor: pointer;
     position: absolute;
-    bottom: 38vh;
+    bottom: 0;
+    transition: 0.5s ease;
+    &:hover {
+      background: #212833;
+      transition: 0.5s ease;
+    }
   }
 `;
 
