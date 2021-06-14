@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import IconButton from "@material-ui/core/IconButton";
-import FlashOnIcon from "@material-ui/icons/FlashOn";
 import "./../index.css";
+
 const LandingPage = () => {
   return (
     <LandingPageWrapper>
