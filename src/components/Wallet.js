@@ -10,15 +10,18 @@ const Wallet = () => {
     });
 
     return () => {
-      
+      unsubscribe();
     };
   }, []);
-
-  console.log(token);
 
   return (
     <div>
       <h1 style={{ color: "white" }}>Wallet</h1>
+      {token.map((token, index) => (
+        <h3 key={index} style={{ color: "white" }}>
+          {token.name}
+        </h3>
+      ))}
     </div>
   );
 };
