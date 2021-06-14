@@ -10,9 +10,11 @@ const Wallet = () => {
     });
 
     return () => {
-      unsubscribe();
+      
     };
   }, []);
+
+  console.log(token);
 
   return (
     <div>

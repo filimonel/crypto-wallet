@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <LandingPageWrapper>
       <TextContainer>
-        <h1 className="gradient-text">keep</h1>
+        <h1 className="gradient-text">keeper</h1>
         <h2>Crypto Wallet</h2>
         <button>Sign in</button>
       </TextContainer>

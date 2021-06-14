@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDesNqmjtSPd6W3SrTKIqXZLAGCbBwqKA4",
-  authDomain: "keep-d6ee0.firebaseapp.com",
-  projectId: "keep-d6ee0",
-  storageBucket: "keep-d6ee0.appspot.com",
-  messagingSenderId: "106743928329",
-  appId: "1:106743928329:web:2f6b65b45b1714eff68ad8",
-  measurementId: "G-N4NVJX14L9",
+  apiKey: "AIzaSyB9mT6z7nuYHrJoZK-tYa3ZGxFspZifw_A",
+  authDomain: "keeper-c3c70.firebaseapp.com",
+  projectId: "keeper-c3c70",
+  storageBucket: "keeper-c3c70.appspot.com",
+  messagingSenderId: "771893364297",
+  appId: "1:771893364297:web:7fef6a91c6cf11e793a198",
+  measurementId: "G-K3TCPE0ERN",
 };
 
 // Connecting firebase to react
