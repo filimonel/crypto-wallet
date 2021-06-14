@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <AppWrapper>
           <LandingPage />
-          <Home />
+          {/* <Home /> */}
         </AppWrapper>
       </Switch>
     </Router>
