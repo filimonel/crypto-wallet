@@ -3,15 +3,14 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./LandingPage";
-import Home from "./Home";
+import Wallet from "./Wallet";
 function App() {
-  const [loading, setLoading] = useState(true);
   return (
     <Router>
       <Switch>
         <AppWrapper>
-          <LandingPage />
-          {/* <Home /> */}
+          <LandingPage exact path='/signin'/>
+          <Wallet />
         </AppWrapper>
       </Switch>
     </Router>
