@@ -1,7 +1,7 @@
 const Wallet = () => {
   return (
     <div>
-      <h1>Wallet</h1>
+      <h1 style={{ color: "white" }}>Wallet</h1>
     </div>
   );
 };

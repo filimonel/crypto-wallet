@@ -9,8 +9,12 @@ function App() {
     <Router>
       <Switch>
         <AppWrapper>
-          <LandingPage exact path='/signin'/>
-          <Wallet />
+          <Route exact path="/signin">
+            <LandingPage />
+          </Route>
+          <Route exact path="/">
+            <Wallet />
+          </Route>
         </AppWrapper>
       </Switch>
     </Router>
