@@ -53,7 +53,7 @@ const TextContainer = styled.div`
     -moz-text-fill-color: transparent;
     font-weight: 600;
     font-size: 7rem;
-    animation: rainbow-text-simple-animation-rev 4s ease infinite;
+    animation: rainbow-text-simple-animation-rev 7s ease infinite;
   }
   h2 {
     color: white;
