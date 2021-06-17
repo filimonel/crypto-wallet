@@ -43,18 +43,26 @@ function App() {
   };
 
   return (
-    <Router>
-      <Switch>
-        <AppWrapper>
-          <Route exact path="/signin">
-            <LandingPage />
-          </Route>
-          <Route exact path="/">
-            <Wallet />
-          </Route>
-        </AppWrapper>
-      </Switch>
-    </Router>
+    // <Router>
+    //   <Switch>
+    //     <AppWrapper>
+    //       {userName ? (
+    //         <Route exact path="/signin">
+    //           <LandingPage />
+    //         </Route>
+    //       ) : (
+    //         <Route exact path="/">
+    //           <Wallet />
+    //         </Route>
+    //       )}
+    //     </AppWrapper>
+    //   </Switch>
+    // </Router>
+    <div>
+      <button onClick={handleSignOut}>Sign out</button>) : (
+      <button onClick={handleSignIn}>Sign In</button>
+      )}
+    </div>
   );
 }
 
