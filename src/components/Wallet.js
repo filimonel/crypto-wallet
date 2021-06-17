@@ -18,9 +18,10 @@ const Wallet = () => {
     <div>
       <h1 style={{ color: "white" }}>Wallet</h1>
       {token.map((token, index) => (
-        <h3 key={index} style={{ color: "white" }}>
-          {token.name}
-        </h3>
+        <div key={index}>
+          <h3 style={{ color: "white" }}>{token.name}</h3>
+          <p style={{ color: "white" }}>${token.price}</p>
+        </div>
       ))}
     </div>
   );

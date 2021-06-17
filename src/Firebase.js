@@ -12,6 +12,12 @@ const firebaseConfig = {
 
 // Connecting firebase to react
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+// Enable access to firestore
 const database = firebaseApp.firestore();
+// Enable authentication
+const auth = firebase.auth();
+// Enable google authentication
+const provider = new firebase.auth.GoogleAuthProvider();
 
 export default database;
+export { auth, provider };
