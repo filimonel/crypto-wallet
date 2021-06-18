@@ -42,27 +42,24 @@ function App() {
       .catch((err) => alert(err.message));
   };
 
+  console.log(userName);
+
   return (
-    // <Router>
-    //   <Switch>
-    //     <AppWrapper>
-    //       {userName ? (
-    //         <Route exact path="/signin">
-    //           <LandingPage />
-    //         </Route>
-    //       ) : (
-    //         <Route exact path="/">
-    //           <Wallet />
-    //         </Route>
-    //       )}
-    //     </AppWrapper>
-    //   </Switch>
-    // </Router>
-    <div>
-      <button onClick={handleSignOut}>Sign out</button>) : (
-      <button onClick={handleSignIn}>Sign In</button>
-      )}
-    </div>
+    <Router>
+      <Switch>
+        <AppWrapper>
+          {userName ? (
+            <Route exact path="/">
+              <Wallet />
+            </Route>
+          ) : (
+            <Route exact path="/signin">
+              <LandingPage handleSignIn={handleSignIn} />
+            </Route>
+          )}
+        </AppWrapper>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import "./../index.css";
 
-const LandingPage = () => {
+const LandingPage = ({ handleSignIn }) => {
+  console.log(handleSignIn);
   return (
     <LandingPageWrapper>
       <TextContainer>
         <h1 className="gradient-text">keeper</h1>
         <h2>Crypto Wallet</h2>
-        <button>Sign in</button>
+        <button onClick={handleSignIn}>Sign in</button>
       </TextContainer>
     </LandingPageWrapper>
   );
