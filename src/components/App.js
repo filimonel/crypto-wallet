@@ -50,11 +50,19 @@ function App() {
         <AppWrapper>
           {userName ? (
             <Route exact path="/">
-              <Wallet />
+              {/* <Wallet handleSignOut={handleSignOut} /> */}
+              <button
+                style={{ color: "white", background: "white" }}
+                onClick={handleSignIn}
+              ></button>
             </Route>
           ) : (
             <Route exact path="/signin">
-              <LandingPage handleSignIn={handleSignIn} />
+              {/* <LandingPage handleSignIn={handleSignIn} /> */}
+              <button
+                style={{ color: "white", background: "white" }}
+                onClick={handleSignOut}
+              ></button>
             </Route>
           )}
         </AppWrapper>

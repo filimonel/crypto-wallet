@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import database from "../Firebase";
 
-const Wallet = () => {
+const Wallet = ({ handleSignOut }) => {
   const [token, setToken] = useState([]);
 
   useEffect(() => {
@@ -16,6 +16,7 @@ const Wallet = () => {
 
   return (
     <div>
+      <button onClick={handleSignOut}>Sign out</button>
       <h1 style={{ color: "white" }}>Wallet</h1>
       {token.map((token, index) => (
         <div key={index}>
